@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>Bobs burger quiz</title>
+    <meta name='description' content='Quiz about animated show.'>
+    <link href='index.css' rel='stylesheet' type='text/css'/>
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  </head>
+  
+<body>
+  <main role='main'>
+    <section id='start-page' class='blackbox'>
+      <div id='title'>
+      <h1>Bobs Burgers!</h1>
+      <img class='belchers' src='https://cdn.vox-cdn.com/thumbor/avYZugBCqoBZd5dkTs5L2ktGjTk=/0x0:2819x1812/1200x800/filters:focal(1102x0:1552x450)/cdn.vox-cdn.com/uploads/chorus_image/image/57001957/bobs_burgers.0.jpg' alt='Belcher Family'>
+      <h3 class='start-text'>Test your Belcher family knowledge with this fun interactive quiz.<br>Click the button below to begin!</h3>
+      </div>
+      <button class='button'>Start cookin'</button>
+    </section>
+    
+    <section id='question-page' class='hidden blackbox'>
+      <form  id='belcher-form' method='get'>
+      <fieldset name='question-set'>
+        <div id='quiz-question' class='belcher-question'></div>
+        <div class='belcher-answer' role='radiogroup'></div>
+        <button id='submit-answer' class='button hidden disabled' type='submit' disabled>Am I right?</button>
+      </fieldset>
+      </form>
+      <button id='next-question' class='button hidden' type='submit'>Next</button>
+      <div id='feedbackcorrect' class='all-feedback hidden'>
+      <h3>Correct!</h3><br>
+      <img class='correct-ans' src='https://media.giphy.com/media/XaFhFM2lVRoVa/giphy.gif' alt='happy tina'></div>
+      <div id='feedbackincorrect' class='hidden'><br></div>
+      <img class='incorrect-ans hidden' src='https://66.media.tumblr.com/2aa412030d008f033688e7c9b6ca2971/tumblr_oz6c3kHumC1r9dm6no1_500.gif' alt='sad tina'>
+      <div class='results-counter'></div>
+      </section>
+    
+    <section id='final-page' class='hidden blackbox'>
+      <h1>How did you do?</h1>
+      <div id='final-correct'><br></div>
+      <div>
+      <img class='belcher-final' src='http://www.media3.hw-static.com/wp-content/uploads/bob-s-burgers_57259999-2400x1350-2400x1350.jpeg' alt='belcher family'/><br>
+      <p class='retry'>Not good enough? Click below to take the quiz again.</p></div>
+      <button id='retake' type='submit'>Another!</button>
+    </section>
+    
+  </main>  
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src='index.js'></script>
+  </body>
+</html>

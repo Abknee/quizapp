@@ -1,0 +1,122 @@
+body * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    font-family:'Acme', sans-serif;
+    color: white;
+    background: url(https://vignette.wikia.nocookie.net/bobsburgerpedia/images/5/50/Wiki-background/revision/latest?cb=20180826205534) no-repeat;
+    background-size: cover;
+    height: 100%;
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .blackbox {
+    width: 90%;
+    height: 75%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+  
+  .belchers {
+    height: auto;
+    width: 50%;
+  }
+  
+  legend {
+    font-size: 24px;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  .button {
+    height: 35px;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Bitter', serif;
+  }
+  
+  .belcher-question {
+    padding-left: 50px;
+    font-size: 18px;
+    text-align: left;
+  }
+  
+  .belcher-answer {
+    text-align: left;
+    padding-left: 50px;
+    font-size: 18px;
+    line-height: 140%;
+    margin-bottom: 30px;
+  }
+  
+  .button.disabled {
+    opacity: 0.50; 
+    cursor: not-allowed;
+  }
+  
+  .results-counter {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .all-feedback {
+    font-size: 18px;
+    margin-top: 10px;
+    position: relative;
+    line-height: 150%;
+  }
+  
+  .correct-ans {
+    height: auto;
+    width: 35%;
+    margin-top: -15px;
+  }
+  
+  .incorrect-ans {
+    height: auto;
+    width: 30%;
+    margin-top: -25px;
+  }
+  
+  #final-correct {
+    margin-top: -30px;
+  }
+  
+  .belcher-final {
+    height: auto;
+    width: 40%;
+  }
+  
+  .retry {
+    font-size: 18px;
+  }
+  
+  #retake {
+    height: 35px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Bitter', serif;
+  }
+  
+  
